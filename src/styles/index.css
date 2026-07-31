@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+html, body {
+  background: #05050B;
+  color: #F4F5FA;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+::selection { background: #8B5CF6; color: #05050B; }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #05050B; }
+::-webkit-scrollbar-thumb { background: #1B2050; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #8B5CF6; }
+
+:focus-visible { outline: 2px solid #35E7D2; outline-offset: 3px; }
+
+.font-display { font-family: 'Sora', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+.glass {
+  background: rgba(14, 19, 48, 0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glow-nebula { box-shadow: 0 0 50px -12px rgba(139,92,246,0.55); }
+.glow-aurora { box-shadow: 0 0 50px -12px rgba(53,231,210,0.4); }
+
+.text-gradient {
+  background: linear-gradient(90deg, #8B5CF6, #35E7D2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.star-node {
+  width: 5px; height: 5px; border-radius: 999px;
+  background: #35E7D2;
+  box-shadow: 0 0 10px 2px rgba(53,231,210,0.8);
+}
+
+.section-label {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #35E7D2;
+}
