@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import CosmicSkillsUniverse from '../skills/CosmicSkillsUniverse'
+import TechArsenal from '../skills/TechArsenal'
 
 export default function Skills() {
   return (
@@ -18,13 +18,13 @@ export default function Skills() {
         viewport={{ once: true }}
         className="font-display text-3xl md:text-4xl font-semibold mb-4 max-w-2xl"
       >
-        Cosmic Skills Universe.
+        Cosmic Tech Arsenal.
       </motion.h2>
-      <p className="text-dust max-w-xl mb-12">
-        Hover a planet for a quick read, click for the full picture — proficiency, projects, and certifications.
+      <p className="text-dust max-w-xl mb-16">
+        Hover, tap, or focus a planet for proficiency and the projects it powered.
       </p>
 
-      <CosmicSkillsUniverse />
+      <TechArsenal />
     </section>
   )
 }
