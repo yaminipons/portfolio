@@ -5,19 +5,19 @@ import {
 import { FaReact, FaGithub, FaDatabase } from 'react-icons/fa'
 import { FiServer, FiCpu } from 'react-icons/fi'
 
-// NOTE on icons: most of these are the technology's real brand mark (simple-icons).
-// A few technologies don't have an official single logo — SQL (a language, not a
-// product) and "REST APIs" (a convention, not a product) — those use a sensible
-// generic icon instead (FaDatabase / FiServer) rather than a fabricated brand mark.
-// Prompt Engineering is a skill, not a product, so it uses a generic AI icon (FiCpu).
+// NOTE on icons: most are the technology's real brand mark (simple-icons).
+// SQL (a language, not a product) and "REST APIs" (a convention, not a product)
+// don't have an official single logo, so they use a sensible generic icon
+// instead (FaDatabase / FiServer). Prompt Engineering is a skill, not a
+// product, so it uses a generic AI icon (FiCpu).
 
-export const rings = [
-  { id: 'languages', label: 'Languages', radius: 110, speed: 0.09, color: '#35E7D2' },
-  { id: 'frontend', label: 'Frontend', radius: 170, speed: 0.075, color: '#8B5CF6' },
-  { id: 'backend', label: 'Backend', radius: 230, speed: 0.06, color: '#4F7CFF' },
-  { id: 'ai', label: 'AI', radius: 290, speed: 0.05, color: '#35E7D2' },
-  { id: 'database', label: 'Database', radius: 340, speed: 0.04, color: '#8B5CF6' },
-  { id: 'tools', label: 'Tools', radius: 390, speed: 0.032, color: '#4F7CFF' },
+export const categories = [
+  { id: 'languages', label: 'Languages', icon: '🚀', color: '#35E7D2' },
+  { id: 'frontend', label: 'Frontend', icon: '🎨', color: '#8B5CF6' },
+  { id: 'backend', label: 'Backend', icon: '🛰️', color: '#4F7CFF' },
+  { id: 'ai', label: 'AI & Machine Learning', icon: '🌌', color: '#35E7D2' },
+  { id: 'database', label: 'Databases', icon: '💾', color: '#8B5CF6' },
+  { id: 'tools', label: 'Tools', icon: '🛠️', color: '#4F7CFF' },
 ]
 
 export const skillsUniverse = [
@@ -87,7 +87,6 @@ export const skillsUniverse = [
     id: 'nlp', name: 'NLP', category: 'AI', ring: 'ai', icon: FiCpu, level: 85,
     description: 'Natural language processing — intent classification, NER, text pipelines.',
     projects: ['BotTrainer'],
-    certifications: ['NPTEL — Introduction to Machine Learning'],
   },
   {
     id: 'rasa', name: 'Rasa', category: 'AI', ring: 'ai', icon: SiRasa, level: 78,
@@ -103,7 +102,6 @@ export const skillsUniverse = [
     id: 'promptengineering', name: 'Prompt Engineering', category: 'AI', ring: 'ai', icon: FiCpu, level: 88,
     description: 'Structuring and iterating on prompts for reliable, high-quality LLM output.',
     projects: ['AI Prompt Engineering Studio'],
-    certifications: ['Google Cloud Skills Boost — Generative AI'],
   },
 
   // Database
